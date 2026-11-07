@@ -1,0 +1,66 @@
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+}
+
+input[type='file'] {
+  font-size: 1.1rem;
+}
+
+.status {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0 0.25rem;
+}
+
+.hint {
+  margin: 0 0 1.5rem;
+  opacity: 0.7;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  border: 3px solid #8884;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+figure.ok {
+  border-color: #2e9d4f;
+}
+
+figure.rejected {
+  border-color: #d64545;
+  opacity: 0.75;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+figcaption span {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
